@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream LMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section class="bg-gradient-to-r from-pink-100 to-blue-100">
+      <nav class="max-w-6xl mx-auto py-4 px-4">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex items-center">
+            <img
+              src="assets/images/logo.svg"
+              alt="Dreams Logo"
+              class="h-8 mr-2"
+            />
+          </div>
+          <div class="flex space-x-9 items-center">
+            <a
+              href="#"
+              class="text-[#26292c] font-semibold hover:text-[#f66962]"
+              >Home</a
+            >
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-[#26292c] font-semibold hover:text-[#f66962] flex items-center"
+              >
+                Instructor
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-3 mt-2"
+              >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 1</a
+                >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 2</a
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-[#26292c] font-semibold hover:text-[#f66962] flex items-center"
+              >
+                Student
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-3 mt-2"
+              >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 1</a
+                >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 2</a
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-[#26292c] font-semibold hover:text-[#f66962] flex items-center"
+              >
+                Pages
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-3 mt-2"
+              >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 1</a
+                >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 2</a
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-[#26292c] font-semibold hover:text-[#f66962] flex items-center"
+              >
+                Blog
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-3 mt-2"
+              >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 1</a
+                >
+                <a
+                  href="#"
+                  class="text-[#26292c] font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Option 2</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-10">
+            <a
+              href="#"
+              class="font-semibold border-2 border-[#F1F1F1] bg-[#F1F1F1] text-[#392c7d] px-10 py-3 rounded-full hover:bg-[#f66962] hover:text-white hover:border-[#f66962] transition duration-300"
+              >Signin</a
+            >
+            <a
+              href="#"
+              class="font-semibold border-[3px] border-[#b4a7f5] text-[#392c7d] px-10 py-3 rounded-full hover:bg-[#f66962] hover:text-white hover:border-[#f66962] transition duration-300"
+              >Signup</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Favourite Course -->
+    <section
+      class="bg-white py-12 mx-auto px-4 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-[18px] font-semibold text-[#f66962] mb-2">
+            Favourite Course
+          </h2>
+          <button
+            class="bg-transparent border-[3px] border-[#b4a7f5] text-[#392c7d] font-medium rounded-[46.9159px] min-w-[150px] py-2 px-4 hover:bg-[#917cf6] hover:border-[#917cf6] hover:text-white"
+          >
+            All Categories
+          </button>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-900 mb-4">Top Category</h3>
+        <p class="text-gray-600 font-semibold mb-10 mr-[500px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean
+          accumsan bibendum gravida maecenas augue elementum et neque.
+          Suspendisse imperdiet.
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 mt-[20px]"
+        >
+          <div
+            class="bg-gray-50 rounded-lg p-6 border border-[#e9ecef] hover:bg-[#413655] hover:text-white transition-colors duration-300"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/categories-icon.png"
+                alt="Angular Icon"
+                class="w-[105px] h-auto"
+              />
+            </div>
+            <h4
+              class="text-lg font-semibold text-center pt-6 max-w-[130px] mx-auto mb-2"
+            >
+              Angular Development
+            </h4>
+            <p class="text-sm text-center">40 Instructors</p>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-lg p-6 border border-[#e9ecef] hover:bg-[#413655] hover:text-white transition-colors duration-300"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/categories-icon-01.png"
+                alt="Docker Icon"
+                class="w-[105px] h-auto"
+              />
+            </div>
+            <h4
+              class="text-lg font-semibold text-center pt-6 max-w-[130px] mx-auto mb-2"
+            >
+              Docker Development
+            </h4>
+            <p class="text-sm text-center">45 Instructors</p>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-lg p-6 border border-[#e9ecef] hover:bg-[#413655] hover:text-white transition-colors duration-300"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/categories-icon-02.png"
+                alt="Node Icon"
+                class="w-[105px] h-auto"
+              />
+            </div>
+            <h4
+              class="text-lg font-semibold text-center pt-6 max-w-[130px] mx-auto mb-2"
+            >
+              Node JS Frontend
+            </h4>
+            <p class="text-sm text-center">40 Instructors</p>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-lg p-6 border border-[#e9ecef] hover:bg-[#413655] hover:text-white transition-colors duration-300"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/categories-icon-03.png"
+                alt="Swift Icon"
+                class="w-[105px] h-auto"
+              />
+            </div>
+            <h4
+              class="text-lg font-semibold text-center pt-6 max-w-[130px] mx-auto mb-2"
+            >
+              Swift Development
+            </h4>
+            <p class="text-sm text-center">23 Instructors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Course -->
+    <section
+      class="relative bg-[url('assets/images/banner.png')] bg-cover bg-center py-12"
+    >
+      <div
+        class="absolute inset-0 before:absolute before:inset-0 before:bg-[url('assets/images/course-bg.png')] before:bg-no-repeat before:bg-cover before:opacity-50"
+      ></div>
+
+      <div
+        class="relative z-10 mx-auto pt-6 px-4 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl"
+      >
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 mt-5"
+        >
+          <h2 class="text-[18px] font-semibold text-[#f66962] mb-2">
+            What's New
+          </h2>
+          <button
+            class="bg-transparent border-[3px] border-[#b4a7f5] text-[#392c7d] font-medium rounded-[46.9159px] min-w-[150px] py-2 px-4 hover:bg-[#917cf6] hover:border-[#917cf6] hover:text-white transition-all duration-300"
+          >
+            All Courses
+          </button>
+        </div>
+
+        <h3 class="text-3xl font-bold text-gray-900 mb-4">Featured Courses</h3>
+        <p class="text-gray-600 font-semibold mb-10 max-w-2xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean
+          accumsan bibendum gravida maecenas augue elementum et neque.
+          Suspendisse imperdiet.
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 mt-[20px]"
+        >
+          <!-- Course Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden group hover:bg-[#413655] hover:text-white transition-all duration-300"
+          >
+            <div class="p-4">
+              <div class="overflow-hidden rounded-lg">
+                <a href="#">
+                  <img
+                    src="assets/images/course-07 (1).jpg"
+                    alt="Course Image"
+                    class="rounded-md w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <img
+                  src="assets/images/user8.jpg"
+                  alt="Instructor"
+                  class="w-8 h-8 rounded-full mr-2"
+                />
+                <div>
+                  <h3 class="text-sm font-semibold">
+                    <a href="">Nicole Brown</a>
+                  </h3>
+                  <p class="text-xs text-gray-500 group-hover:text-gray-300">
+                    Instructor
+                  </p>
+                </div>
+                <button
+                  class="ml-auto text-gray-400 hover:text-red-500 group-hover:text-white focus:outline-none"
+                >
+                  <i
+                    id="heartIcon"
+                    class="far fa-heart fa-lg text-[#ff5364] group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+              <h2
+                class="text-lg font-semibold mb-2 text-[#002058] group-hover:text-white"
+              >
+                <a href="">Information About UI/UX Design Degree</a>
+              </h2>
+              <div
+                class="flex justify-between text-xs text-gray-500 group-hover:text-gray-300 mb-4"
+              >
+                <span
+                  ><i
+                    class="fas fa-video mr-1 text-[#f66962] group-hover:text-[#ff8a84]"
+                  ></i
+                  >12+ Lesson</span
+                >
+                <span
+                  ><i
+                    class="fas fa-clock mr-1 text-[#b4a7f5] group-hover:text-[#cdc3ff]"
+                  ></i
+                  >12h 30min</span
+                >
+              </div>
+              <hr class="border-gray-200 group-hover:border-white" />
+              <div class="flex items-center pt-4 justify-between">
+                <div class="flex items-center">
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i
+                    class="fas fa-star text-gray-300 text-[12px] group-hover:text-gray-500"
+                  ></i>
+                  <span class="text-[12px] ml-1">4.0 (15)</span>
+                </div>
+                <button
+                  class="hover:bg-[#b4a7f5] border-2 font-semibold border-[#b4a7f5] text-[#b4a7f5] px-4 py-2 rounded-full text-sm hover:text-white transition-all duration-300 cursor-pointer group-hover:text-white group-hover:border-[#b4a7f5]"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+<!-- 
+
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden group hover:bg-[#413655] hover:text-white transition-all duration-300"
+          >
+            <div class="p-4">
+              <div class="overflow-hidden rounded-lg">
+                <a href="#">
+                  <img
+                    src="assets/images/course-02.jpg"
+                    alt="Course Image"
+                    class="rounded-md w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <img
+                  src="assets/images/user8.jpg"
+                  alt="Instructor"
+                  class="w-8 h-8 rounded-full mr-2"
+                />
+                <div>
+                  <h3 class="text-sm font-semibold">
+                    <a href="">Xiao Ming</a>
+                  </h3>
+                  <p class="text-xs text-gray-500 group-hover:text-gray-300">
+                    Instructor
+                  </p>
+                </div>
+                <button
+                  class="ml-auto text-gray-400 hover:text-red-500 group-hover:text-white focus:outline-none"
+                >
+                  <i
+                    id="heartIcon"
+                    class="far fa-heart fa-lg text-[#ff5364] group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+              <h2
+                class="text-lg font-semibold mb-2 text-[#002058] group-hover:text-white"
+              >
+                <a href="">Master in Digital Marketing</a>
+              </h2>
+              <div
+                class="flex justify-between text-xs text-gray-500 group-hover:text-gray-300 mb-4"
+              >
+                <span
+                  ><i
+                    class="fas fa-video mr-1 text-[#f66962] group-hover:text-[#ff8a84]"
+                  ></i
+                  >12+ Lesson</span
+                >
+                <span
+                  ><i
+                    class="fas fa-clock mr-1 text-[#b4a7f5] group-hover:text-[#cdc3ff]"
+                  ></i
+                  >12h 30min</span
+                >
+              </div>
+              <hr class="border-gray-200 group-hover:border-white" />
+              <div class="flex items-center pt-4 justify-between">
+                <div class="flex items-center">
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i
+                    class="fas fa-star text-gray-300 text-[12px] group-hover:text-gray-500"
+                  ></i>
+                  <span class="text-[12px] ml-1">4.0 (15)</span>
+                </div>
+                <button
+                  class="hover:bg-[#b4a7f5] border-2 font-semibold border-[#b4a7f5] text-[#b4a7f5] px-4 py-2 rounded-full text-sm hover:text-white transition-all duration-300 cursor-pointer group-hover:text-white group-hover:border-[#b4a7f5]"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden group hover:bg-[#413655] hover:text-white transition-all duration-300"
+          >
+            <div class="p-4">
+              <div class="overflow-hidden rounded-lg">
+                <a href="#">
+                  <img
+                    src="assets/images/course-02.jpg"
+                    alt="Course Image"
+                    class="rounded-md w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <img
+                  src="assets/images/user8.jpg"
+                  alt="Instructor"
+                  class="w-8 h-8 rounded-full mr-2"
+                />
+                <div>
+                  <h3 class="text-sm font-semibold">
+                    <a href="">Xiao Ming</a>
+                  </h3>
+                  <p class="text-xs text-gray-500 group-hover:text-gray-300">
+                    Instructor
+                  </p>
+                </div>
+                <button
+                  class="ml-auto text-gray-400 hover:text-red-500 group-hover:text-white focus:outline-none"
+                >
+                  <i
+                    id="heartIcon"
+                    class="far fa-heart fa-lg text-[#ff5364] group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+              <h2
+                class="text-lg font-semibold mb-2 text-[#002058] group-hover:text-white"
+              >
+                <a href="">Master in Digital Marketing</a>
+              </h2>
+              <div
+                class="flex justify-between text-xs text-gray-500 group-hover:text-gray-300 mb-4"
+              >
+                <span
+                  ><i
+                    class="fas fa-video mr-1 text-[#f66962] group-hover:text-[#ff8a84]"
+                  ></i
+                  >12+ Lesson</span
+                >
+                <span
+                  ><i
+                    class="fas fa-clock mr-1 text-[#b4a7f5] group-hover:text-[#cdc3ff]"
+                  ></i
+                  >12h 30min</span
+                >
+              </div>
+              <hr class="border-gray-200 group-hover:border-white" />
+              <div class="flex items-center pt-4 justify-between">
+                <div class="flex items-center">
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i class="fas fa-star text-yellow-500 text-[12px]"></i>
+                  <i
+                    class="fas fa-star text-gray-300 text-[12px] group-hover:text-gray-500"
+                  ></i>
+                  <span class="text-[12px] ml-1">4.0 (15)</span>
+                </div>
+                <button
+                  class="hover:bg-[#b4a7f5] border-2 font-semibold border-[#b4a7f5] text-[#b4a7f5] px-4 py-2 rounded-full text-sm hover:text-white transition-all duration-300 cursor-pointer group-hover:text-white group-hover:border-[#b4a7f5]"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+ -->
+
+      </div>
+    </section>
+
+    <section class="py-16 px-4 bg-white">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Header Section -->
+        <div class="mb-2">
+          <h2 class="text-[#f66962] text-lg font-medium mb-3">What's New</h2>
+          <h1 class="text-4xl font-bold text-gray-900 mb-3">Master the skills to drive your career</h1>
+          <p class="text-gray-600 max-w-xl">
+            Get certified, master modern tech skills, and level up your career — whether you're starting
+            out or a seasoned pro. 95% of eLearning learners report our hands-on content directly
+            helped their careers.
+          </p>
+        </div>
+    
+        <!-- Two-column layout -->
+        <div class="flex flex-col lg:flex-row items-center">
+          <!-- Left column - Features -->
+          <div class="w-full lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm hov transition-all">
+              <div class="flex items-start items-center">
+                  <img src="assets/images/icon-1.svg" alt="">
+                  <div>
+                      <h3 class="text-[14px] font-semibold ml-[15px] text-[#685f78] mb-1">Stay motivated with engaging instructors</h3>
+                  </div>
+              </div>
+          </div>
+    
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
+              <div class="flex items-start items-center">
+                <img src="assets/images/icon-2.svg" alt="">
+                <div>
+                  <h3 class="text-[14px] font-semibold ml-[15px] text-[#685f78] mb-1">Keep up with in the latest in cloud</h3>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
+              <div class="flex items-start items-center">
+                <img src="assets/images/icon-3.svg" alt="">
+                <div>
+                  <h3 class="text-[14px] font-semibold ml-[15px] text-[#685f78] mb-1">Get certified with 100+ certification courses</h3>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Feature 4 -->
+            <div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all">
+              <div class="flex items-start items-center">
+                <img src="assets/images/icon-4.svg" alt="">
+                <div>
+                  <h3 class="text-[14px] font-semibold ml-[15px] text-[#685f78] mb-1">Build skills your way, from labs to courses</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right column - Image -->
+          <div class="w-full lg:w-2/5 mt-10 lg:mt-0 relative">
+            <img src="assets/images/join.png" alt="Student learning" class="w-full h-auto relative z-10" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-white py-12 mx-auto px-4 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+
+        <h2 class="text-[18px] font-semibold text-[#f66962] mb-2">
+          Favourite Course
+        </h2>
+
+      <h3 class="text-3xl font-bold text-gray-900 mb-4">Master the skills to drive your career</h3>
+      <p class="text-gray-600 font-semibold mb-10 mr-[500px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean
+        accumsan bibendum gravida maecenas augue elementum et neque.
+        Suspendisse imperdiet.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white py-12 mx-auto px-4 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl"
+    >
+      <div class="container mx-auto flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="assets/images/logo.svg" alt="Logo" class="h-8 mr-2" />
+          </div>
+          <p class="text-gray-900 text-sm w-72">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat mauris adipiscing elit.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="ml-[50px]">
+            <h3 class="font-semibold mb-[26px] text-[#0a142f] text-[18px]">
+              For Instructor
+            </h3>
+            <ul class="text-gray-900 text-sm">
+              <li class="mb-5 hover:text-[#f66962]">
+                <a href="#">Profile</a>
+              </li>
+              <li class="mb-5 hover:text-[#f66962]"><a href="#">Login</a></li>
+              <li class="mb-5 hover:text-[#f66962]">
+                <a href="#">Register</a>
+              </li>
+              <li class="mb-5 hover:text-[#f66962]">
+                <a href="#">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-[26px] text-[#0a142f] text-[18px]">
+              For Student
+            </h3>
+            <ul class="text-gray-900 text-sm">
+              <li class="mb-5 hover:text-[#f66962]"><a href="#">Profile</a></li>
+              <li class="mb-5 hover:text-[#f66962]"><a href="#">Login</a></li>
+              <li class="mb-5 hover:text-[#f66962]">
+                <a href="#">Register</a>
+              </li>
+              <li class="mb-5 hover:text-[#f66962]">
+                <a href="#">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-[26px] text-[#0a142f] text-[18px]">
+              News Letter
+            </h3>
+            <div class="flex mb-4">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="border rounded-l px-3 py-2 text-sm w-full focus:outline-none"
+              />
+              <button
+                class="bg-[#917cf6] hover:bg-[#f66962] text-white rounded-r px-4 py-2 text-sm"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <ul class="text-gray-600 text-sm">
+              <li class="flex items-center mb-[16px]">
+                <img src="assets/images/icon-20.svg" alt="" class="mr-2" />
+                <span>3556 Beech Street, San Francisco, CA 94108</span>
+              </li>
+              <li class="flex items-center mb-[16px]">
+                <img src="assets/images/icon-19.svg" class="mr-2" alt="" />
+                <span>dreamsims@example.com</span>
+              </li>
+              <li class="flex items-center mb-[16px]">
+                <img src="assets/images/icon-21.svg" class="mr-2" alt="" />
+                <span>+1 9123-456-7890</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto mt-8 flex justify-between items-center text-sm text-gray-600"
+      >
+        <div class="text-black">
+          <a href="#" class="mr-2 hover:text-[#f66962]">Terms</a>
+          <a href="" class="mr-2">|</a>
+          <a href="#" class="hover:text-[#f66962]">Privacy</a>
+        </div>
+        <div>
+          <span>© 2024 DreamsLMS. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
